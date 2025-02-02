@@ -1,50 +1,116 @@
-# Welcome to your Expo app 👋
+# Aora - Video Sharing App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aora is a React Native mobile application built with Expo and Appwrite, designed for sharing and discovering videos.
 
-## Get started
+## 📥 Download & Source Code
 
-1. Install dependencies
+- 📱 **APK**: [Download here](https://drive.google.com/file/d/1PCcZAx2LiHRCmvwZYM3bC-EkfST9GpR6/view?usp=sharing)
+- 💻 **Source Code**: [GitHub Repository](https://github.com/Abdelaziz79/learn-react-native)
 
+## 🚀 Features
+
+- 🔐 User Authentication (Sign Up / Sign In)
+- 📱 Profile Management
+- 🎥 Video Upload & Playback
+- 🔍 Video Search Functionality
+- 📌 Bookmark Favorite Videos
+- 🔄 Pull to Refresh
+- 🎨 Modern UI with Tailwind CSS
+- 🎬 Video Thumbnails Generation
+- 📂 Tab-based Navigation
+
+## 🛠 Tech Stack
+
+- [Expo](https://expo.dev/) - React Native development platform
+- [React Native](https://reactnative.dev/) - Mobile app framework
+- [Appwrite](https://appwrite.io/) - Backend as a Service
+- [NativeWind](https://www.nativewind.dev/) - Tailwind CSS for React Native
+- [Expo Router](https://docs.expo.dev/router/introduction/) - File-based navigation
+- [Expo AV](https://docs.expo.dev/versions/latest/sdk/av/) - Audio/Video playback
+
+## 📖 Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/)
+- npm or yarn
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- An [Appwrite](https://appwrite.io/) instance
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Abdelaziz79/learn-react-native
+   cd learn-react-native
+   ```
+
+2. **Install dependencies:**
    ```bash
    npm install
    ```
 
-2. Start the app
-
-   ```bash
-    npx expo start
+3. **Set up environment variables:**
+   Create a `.env.local` file and add your Appwrite credentials:
+   ```plaintext
+   PACKAGE_NAME=com.your.app
+   PROJECT_ID=your_project_id
+   DATABASE_ID=your_database_id
    ```
 
-In the output, you'll find options to open the app in a
+4. **Start the development server:**
+   ```bash
+   npx expo start
+   ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Running the App
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **For iOS simulator:** Press `i`
+- **For Android emulator:** Press `a`
+- **For Web:** Press `w`
 
-## Get a fresh project
+## 📂 Project Structure
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+├── app/                 # Main application screens
+│   ├── (auth)/         # Authentication screens
+│   ├── (tabs)/         # Tab navigation screens
+│   └── search/         # Search functionality
+├── assets/             # Static assets (images, fonts)
+├── components/         # Reusable React components
+├── constants/          # Application constants
+├── context/            # React Context providers
+├── lib/                # Utility functions and API calls
+└── app.json            # Expo configuration
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🤝 Contributing
 
-## Learn more
+1. **Fork the repository**
+2. **Create a feature branch:**
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. **Commit your changes:**
+   ```bash
+   git commit -m "Add amazing feature"
+   ```
+4. **Push to the branch:**
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+5. **Open a Pull Request**
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📜 License
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+This project is licensed under the **MIT License**.
 
-## Join the community
+## 🙌 Acknowledgments
 
-Join our community of developers creating universal apps.
+- [Expo Documentation](https://docs.expo.dev/)
+- [React Native Documentation](https://reactnative.dev/docs/getting-started)
+- [Appwrite Documentation](https://appwrite.io/docs)
+- [NativeWind Documentation](https://www.nativewind.dev/docs)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
